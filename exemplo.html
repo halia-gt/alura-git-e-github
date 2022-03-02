@@ -33,4 +33,24 @@ git add .                faz com que todos os arquivos da pasta sejam monitorado
 git commit -m "mensagem"      adiciona um commit com uma mensagem que geralmente explica brevemente o que foi alterado, por exemplo "Criando arquivo exemplo.html com lista de cursos."
 
 git add exemplo.html    adiciona uma modificação do arquivo, depois ainda precisa adicionar mais um commmit pra explicar a modificação :)
+
+
+Vendo lista de commits:
+git log
+
+Vendo lista de commits resumida em uma linha:
+git log --oneline
+
+Vendo os commits COM as modificações feitas:
+git log -p
+
+Mostrar coisas específicas do commit:
+https://devhints.io/git-log
+
+Por exemplo:
+git log --pretty="format:%h %an" mostra as hashes resumidas, e o autor dos commits
+git log --author="Nathália"  mostra os commits realizados pelo autor Nathália
+git log --grep="headline" mostra commits com a "headline" na mensagem (pra indicar no que o autor trabalhou)
+
+
 -->
