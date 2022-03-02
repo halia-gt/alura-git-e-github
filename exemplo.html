@@ -52,5 +52,15 @@ git log --pretty="format:%h %an" mostra as hashes resumidas, e o autor dos commi
 git log --author="Nathália"  mostra os commits realizados pelo autor Nathália
 git log --grep="headline" mostra commits com a "headline" na mensagem (pra indicar no que o autor trabalhou)
 
+Pro git ignorar alguns arquivos:
+criar nna mesma pasta do repositório um arquivo chamado ".gitignore". Nesse arquivo, cada linha que você adicionar é um arquivo que o git vai ignorar. Se for pra ignorar uma pasta chamada "ALURA", adicionaria uma linha chamada ALURA/
 
+Se eu pedir o status agora, ele não pede mais pra adicionar o arquivo "para_ignorar", mas pede pra eu adicionar o arquivo ".gitignore", então precisa adicionar
+
+git add .gitignore
+git commit -m "Adicionando .gitignore"
+
+Recomendação pra quando commitar:
+-NUNCA commitar um código que não funcione;
+-Commitar, em geral, não tem regra, mas pode criar um commit quando corrigir um pequeno bug, quando adicionar uma pequena função, sempre que gerar algo novo
 -->
