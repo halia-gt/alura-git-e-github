@@ -64,3 +64,39 @@ Recomendação pra quando commitar:
 -NUNCA commitar um código que não funcione;
 -Commitar, em geral, não tem regra, mas pode criar um commit quando corrigir um pequeno bug, quando adicionar uma pequena função, sempre que gerar algo novo
 -->
+
+<!--
+
+    REPOSITÓRIOS REMOTOS:
+
+Criar um diretório (pasta) com nome servidor:
+mkdir servidor
+
+Entrar no diretório:
+cd servidor/
+
+Iniciar um repositório que contenha SOMENTE as alterações feitas, e não o arquivo em si que foi alterado
+git init --bare
+
+Adicionar o repositório remoto chamado "local" no meu diretório atual:
+cd ..        pra voltar pro diretório Git e Github (só pq criei a pasta Servidor dentro dele, não pq é uam necessidade)
+git remote add local "G:/ALURA/Git e Github/Servidor/"
+
+Pra listar os servidores que o meu repositório acessa:
+git remote (vai mostrar o nome "local" pq foi o nome dado anteriormente)
+
+A parte depois do nome pode ser qualquer coisa, tipo um site. no caso é uma pasta no meu pc
+
+Mostrar o endereço do servidor local:
+git remote -v
+
+Pra Ana (pessoa qualquer) poder usar o mesmo repositório local (o servidor), cria uma pasta pra Ana e clona pra ela
+git clone "/g/ALURA/Git e Github/Servidor/" projeto projeto-ana
+
+
+No caso eu não tinha uma pasta pra mim antes, mas na teoria a lista de pastas do meu Git e Github seria:
+projeto-nathália  (pasta pra eu editar meus arquvios)
+projeto-ana (pasta pra "Ana" editar os arquivos pra odne eu clonei os arquivos do servidor)
+Servidor (diretório-repositório com os commits)
+
+-->
